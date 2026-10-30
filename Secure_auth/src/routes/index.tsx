@@ -12,6 +12,9 @@ import {
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
+const DESC =
+  "Finish setting up two-step verification for your work email. Step-by-step help for Microsoft 365 and Google Workspace accounts.";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -149,24 +152,17 @@ function Index() {
       </header>
 
       <main>
-        <section className="mx-auto max-w-6xl px-6 pb-12 pt-16 md:pt-24">
-          <div className="max-w-3xl">
+        <section className="mx-auto max-w-6xl px-6 pb-16 pt-12 md:pt-16">
+          <div className="flex flex-col items-center text-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-3 py-1 text-sm font-medium text-secondary-foreground">
-              <Clock className="size-4" /> About 5 minutes
+              <Clock className="size-4" /> About 2 minutes
             </span>
-            <h1 className="mt-6 text-4xl font-semibold leading-[1.08] md:text-6xl">
-              Finish setting up two-step verification for your work email.
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            <p className="mx-auto mt-4 mb-8 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               Add a second lock to your account so that only you can get in, even if someone learns your password.
               Choose your email provider below and we’ll guide you through it.
             </p>
-            <div className="mt-8 flex flex-wrap gap-6 text-sm font-medium">
-            </div>
           </div>
-        </section>
 
-        <section className="mx-auto max-w-6xl px-6 pb-16">
           <Tabs defaultValue="microsoft">
             <TabsList className="mx-auto mb-6 flex w-fit h-auto flex-wrap gap-1 bg-secondary p-1.5">
               {providers.map((p) => (
