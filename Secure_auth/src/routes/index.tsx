@@ -12,9 +12,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
-const DESC =
-  "Finish setting up two-step verification for your work email. Step-by-step help for Microsoft 365 and Google Workspace accounts.";
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
